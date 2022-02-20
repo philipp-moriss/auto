@@ -1,0 +1,13 @@
+.PriceInner{
+    margin-top: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media all and (max-width: 770px){
+    .PriceInner{
+        flex-direction: column;
+    }
+}

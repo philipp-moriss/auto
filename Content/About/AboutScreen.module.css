@@ -1,0 +1,59 @@
+.homeScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title {
+    margin-top: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.TitleSpan {
+    color: #e19c07;
+}
+
+.subTitle {
+    background-color: rgba(95, 158, 160, 0.34);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.InnerInfo{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media all and ( max-width: 930px ) {
+    .InnerInfo {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.whyDoYouNeed {
+    background-color: rgba(95, 158, 160, 0.34);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.whyDoYouNeedTitle {
+    color: #e19c07;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.whyDoYouNeedText {
+ font-size: 20px;
+}

@@ -1,0 +1,10 @@
+.PriceCard{
+
+}
+
+.PriceCard:hover{
+
+}
+.PriceCard + .PriceCard {
+    margin-top: 50px;
+}

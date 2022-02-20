@@ -1,0 +1,13 @@
+.HomeScreenInner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+}
+
+.Title {
+    margin-top: 150px;
+    color: #f5a906;
+    font-size: 40px;
+    font-weight: bold;
+}
