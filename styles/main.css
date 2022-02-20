@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.priceScreenWrapper{
+    min-height: 100vh;
+    background-image: url("../static/homescreen.jpg");
+    background-size: cover;
+}
+
+.homeScreenWrapper{
+    min-height: 100vh;
+    background-image: url("../static/homescreen.jpg");
+    background-size: cover;
+}
+
+.wrapper{
+    min-height: 100vh;
+    background-image: url("../static/bg.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+
