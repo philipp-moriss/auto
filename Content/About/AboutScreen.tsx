@@ -1,11 +1,16 @@
 import style from './AboutScreen.module.css'
-import {Row} from "antd";
 import {CardInfo} from "../../components/Card/CardInfo";
+import { useSpring, animated } from 'react-spring';
 export const AboutScreen = () => {
+    const affect = useSpring({
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+        config: { duration: 2000 },
+    })
     return (
         <section className={style.homeScreen}>
             <h1 className={style.Title}><span className={style.TitleSpan}>Профессиональный автоподбор</span> - подбор автомобиля с гарантией</h1>
-            <p className={style.subTitle}>
+            <animated.p className={style.subTitle} style={affect}>
                 Наша компания занимается поиском и подбором подержанных автомобилей по критериям заказчика, а также
                 проверкой и диагностикой авто перед покупкой.
                 <br/>
@@ -15,7 +20,7 @@ export const AboutScreen = () => {
                 каждом этапе: в выборе авто, подборе, проверки, покупке, а также оформлении.
                 <br/>
                 Мы гарантируем:
-            </p>
+            </animated.p>
             <div className={style.InnerInfo}>
                 <CardInfo Title={'Полный возврат денег'}/>
                 <CardInfo Title={'Техническую исправность автомобиля'}/>
@@ -23,14 +28,14 @@ export const AboutScreen = () => {
             </div>
             <div className={style.whyDoYouNeed}>
                 <h2 className={style.whyDoYouNeedTitle}>ЗАЧЕМ НУЖНА УСЛУГА:</h2>
-                <p className={style.whyDoYouNeedText}>
+                <animated.p className={style.whyDoYouNeedText} style={affect}>
                     сегодня очень сложно найти и выбрать
                     хороший автомобиль. на рынке беларуси около 70% автомобилей со ск
                     рученным пробегом или побывавших в дтп. еще 15% с серьезными техническими проблемами.
                     и только из оставшихся 15% можно найти и купить что то стоящее. именно этим мы и занимаемся.
                     автоподбор это не просто услуга, для нас это образ жизни и мышления. мы не продаем и не покупаем
                     вам автомобили, мы экономим ваше время и бережем ваш кошелек.
-                </p>
+                </animated.p>
             </div>
         </section>
     )

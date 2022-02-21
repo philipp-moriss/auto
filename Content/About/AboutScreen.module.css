@@ -16,7 +16,7 @@
 }
 
 .subTitle {
-    background-color: rgba(95, 158, 160, 0.34);
+    background-color: rgba(236, 214, 29, 0.44);
     border-radius: 30px;
     padding: 10px 20px;
     margin-top: 20px;
@@ -41,7 +41,7 @@
 }
 
 .whyDoYouNeed {
-    background-color: rgba(95, 158, 160, 0.34);
+    background-color: rgba(236, 214, 29, 0.44);
     border-radius: 30px;
     margin: 10px;
     padding: 0 20px;
@@ -49,7 +49,8 @@
 }
 
 .whyDoYouNeedTitle {
-    color: #e19c07;
+    color: #000;
+    font-weight: bold;
     margin-top: 20px;
     font-size: 24px;
 }
