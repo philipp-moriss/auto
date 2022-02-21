@@ -4,8 +4,9 @@ import {config, useSpring, animated} from 'react-spring'
 
 export const HomeScreen = () => {
     const color = useSpring({
-        from: {color: '#05d3c8'},
-        to: {color: '#f5a906'},
+        from: {color: '#05d3c8', fontSize: '30px'},
+        to: {color: '#f5a906', fontSize: '40px'},
+        config : config.slow ,
         loop: {reverse: true},
     })
     return (

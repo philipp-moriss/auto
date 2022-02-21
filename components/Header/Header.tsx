@@ -5,7 +5,7 @@ import React from "react";
 export const Header : React.FC<HeaderPropsType> = ({ColorMod, active= ''}) => {
 
     return (
-        <div className={style.header__menu}>
+        <header className={style.header__menu}>
             <a href={PATH.HOME}>
                 <Logo style={{width: 100, height: 100, backgroundColor:'rgba(225,156,7,0.23)',borderRadius:'50%'}}/>
             </a>
@@ -19,7 +19,7 @@ export const Header : React.FC<HeaderPropsType> = ({ColorMod, active= ''}) => {
                     </li>
                 </ul>
             </nav>
-        </div>
+        </header>
     )
 }
 
